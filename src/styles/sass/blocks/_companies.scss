@@ -1,0 +1,19 @@
+.companies {
+	padding: 50px 0;
+}
+@media (max-width: 620px) {
+	.companies {
+		padding: 25px 0;
+	}
+}
+.companies__items {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.companies__item {
+	flex: 0 1 16.6667%;
+	text-align: center;
+	padding: 8px 15px;
+}

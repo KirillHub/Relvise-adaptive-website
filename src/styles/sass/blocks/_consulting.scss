@@ -1,0 +1,119 @@
+.consulting {
+	padding: 40px 0;
+}
+@media (max-width: 992px) {
+	.consulting__body {
+		padding: 0 25px;
+	}
+	.consulting {
+		padding: 30px 0;
+	}
+}
+@media (max-width: 476px) {
+	.consulting {
+		padding: 20px 0;
+	}
+}
+.consulting__items {
+	display: flex;
+}
+.consulting__consulting-block {
+	padding: 0 10px 0 0;
+	flex: 1 1 auto;
+	> *:not(:last-child) {
+		margin: 0 0 10px 0;
+	}
+	h3 {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 32px/24px * 100%;
+		letter-spacing: 0.1px;
+	}
+	p {
+		font-weight: 500;
+		line-height: 20px/14px * 100%;
+		letter-spacing: 0.2px;
+		color: $another;
+	}
+}
+@media (max-width: 767px) {
+	.consulting__consulting-block {
+		h3 {
+			font-size: 19px;
+		}
+	}
+}
+.consulting__button {
+	flex: 0 0 auto;
+}
+.consulting__button_link {
+	display: block;
+	button {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 28px/14px * 100%;
+		text-align: center;
+		letter-spacing: 0.2px;
+		background: #ff7b47;
+		border-radius: 5px;
+		min-height: 58px;
+		padding: 0 40px;
+		color: $w;
+		&:hover {
+			color: #0d5c63;
+			border: 1px solid #0d5c63;
+			background: none;
+		}
+		&:active {
+			color: rgba(255, 0, 0, 0.452);
+			border: 1px solid rgba(255, 0, 0, 0.13);
+			background: rgba(255, 0, 0, 0.13);
+		}
+	}
+}
+
+@media (max-width: 660px) {
+	.consulting__button_link {
+		button {
+			padding: 0 25px;
+		}
+	}
+	.consulting__body {
+		padding: 0 10px;
+	}
+	.consulting__button {
+		display: flex;
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	.consulting__button_link {
+		button {
+			padding: 0 35px;
+		}
+	}
+}
+@media (max-width: 520px) {
+	.consulting__button {
+		flex: 1 1 auto;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+	}
+	.consulting__consulting-block {
+		h3 {
+			text-align: center;
+		}
+		p {
+			text-align: center;
+		}
+		&:not(:last-child) {
+			padding: 0 0 20px 0;
+		}
+	}
+	.consulting__items {
+		flex-wrap: wrap;
+	}
+}

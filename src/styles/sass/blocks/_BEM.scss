@@ -1,0 +1,27 @@
+.main-title {
+	> *:not(:last-child) {
+		margin: 0 0 10px 0;
+	}
+}
+.main-title__title {
+	@include main-title__title;
+	font-size: 40px;
+	&:not(:last-child) {
+		margin: 0 0 10px 0;
+	}
+}
+
+.main-title__text {
+	@include main-title__text;
+}
+
+@media (max-width: 560px) {
+	.main-title__title {
+		font-size: 34px;
+	}
+}
+@media (max-width: 479px) {
+	.main-title__title {
+		font-size: 28px;
+	}
+}

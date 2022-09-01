@@ -1,0 +1,41 @@
+
+//for BM title
+@mixin main-title__title {
+	font-weight: 700;
+	line-height: 57px/40px * 100%;
+	letter-spacing: 0.2px;
+	text-align: center;
+}
+@mixin main-title__text {
+	color: $another;
+	line-height: 20px/14px * 100%;
+	text-align: center;
+	letter-spacing: 0.2px;
+}
+
+@mixin descr__text {
+	line-height: 20px/14px * 100%;
+	letter-spacing: 0.2px;
+	color: $another;
+}
+@mixin descr__text_big {
+	font-size: 16px;
+	line-height: 24px/16px * 100%;
+	text-align: center;
+	letter-spacing: 0.1px;
+	color: $another;
+	font-weight: 700;
+}
+
+//for all title (not BM)
+@mixin main-title__base {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 57px/40px * 100%;
+	letter-spacing: 0.2px;
+	text-align: center;
+}
+
+@mixin border {
+	border: 1px solid red;
+}
